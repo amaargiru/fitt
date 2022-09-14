@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">F.track</string>
+    <string name="test_banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="today_burned_calories">00000</string>
+    <string name="today_burned_calories_desription">calories burned</string>
+
+    <string name="today_travelled_meters">00000</string>
+    <string name="today_travelled_meters_desription">meters travelled</string>
+
+    <string name="weight">Weight</string>
+    <string name="weight_units">kg</string>
+
+    <string name="height">Height</string>
+    <string name="height_units">cm</string>
+
+    <string name="gender">Gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <string name="app_start">Tracker started</string>
+    <string name="app_stop">Tracker stopped</string>
+</resources>

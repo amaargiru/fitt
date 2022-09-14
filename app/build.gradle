@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.sepulkary.ftrack"
+        minSdkVersion 14
+        targetSdkVersion 14
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.google.android.gms:play-services-ads:7.5.0'
+    compile 'me.grantland:autofittextview:0.2.+'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.2'
+    compile 'com.google.code.gson:gson:2.3'
+    compile files('libs/intel-context-sensing-1.6.7.232.jar')
+}

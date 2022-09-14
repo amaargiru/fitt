@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:columnCount="4"
+        android:paddingBottom="@dimen/vertical_margin"
+        android:paddingLeft="@dimen/vertical_margin"
+        android:paddingRight="@dimen/vertical_margin"
+        android:paddingTop="@dimen/vertical_margin"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/weightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:text="@string/weight" />
+
+        <SeekBar
+            android:id="@+id/weightSeekBar"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:max="@integer/weight_seek_bar_max" />
+
+        <TextView
+            android:id="@+id/weightValueTextView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:minWidth="@dimen/min_value_text_width"
+            android:text="*" />
+
+        <TextView
+            android:id="@+id/heightTextView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:text="@string/height" />
+
+        <SeekBar
+            android:id="@+id/heightSeekBar"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal" />
+
+        <TextView
+            android:id="@+id/heightValueTextView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:text="**" />
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:text="@string/gender" />
+
+        <RelativeLayout
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal">
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/gender_female" />
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:text="@string/gender_male" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <Space
+            android:layout_height="@dimen/vertical_space"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/enterUserButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupGender"
+            android:text="OK">
+
+            <requestFocus />
+        </Button>
+    </GridLayout>
+</RelativeLayout>

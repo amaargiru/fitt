@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/todaySettingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/settings"/>
+
+        <ImageButton
+            android:id="@+id/startStopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/settingsButton"
+            android:background="@null"
+            android:src="@drawable/play"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/TodayLostCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/today_burned_calories"
+            android:textSize="100sp"
+            autofit:minTextSize="8sp" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/TodayLostCaloriesDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/today_burned_calories_desription"
+            android:textSize="30sp"
+            autofit:minTextSize="8sp" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/TodayTravelledMeters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/today_travelled_meters"
+            android:textSize="100sp"
+            autofit:minTextSize="8sp" />
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/TodayTravelledMetersDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/today_travelled_meters_desription"
+            android:textSize="30sp"
+            autofit:minTextSize="8sp" />
+    </LinearLayout>
+</FrameLayout>
