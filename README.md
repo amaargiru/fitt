@@ -1,2 +1,2 @@
-# fitt
-Fitness tracker Android app
+## fitt
+Fitness tracker Android app.

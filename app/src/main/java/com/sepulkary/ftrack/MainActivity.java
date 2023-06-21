@@ -492,10 +492,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
         final float K_EXERCISE = 1.2f;
 
-        if (Gender) {// Female
+        if (Gender) { // Female
             CalculatedResult = K_EXERCISE * (FEMALE_K0 + FEMALE_K_WEIGHT * UserWeight + FEMALE_K_HEIGHT * UserHeight + FEMALE_K_AGE * 25.0f);// Можно добавить ввод возраста в UserActivity
             return CalculatedResult;
-        } else {// Male
+        } else { // Male
             CalculatedResult = K_EXERCISE * (MALE_K0 + MALE_K_WEIGHT * UserWeight + MALE_K_HEIGHT * UserHeight + MALE_K_AGE * 25.0f);
             return CalculatedResult;
         }
